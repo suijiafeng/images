@@ -1,0 +1,14 @@
+footer {
+  .copyright {
+    @include basic;
+    font-size: 14px;
+    display: flex;
+    line-height: 3em;
+    color: #BABABA;
+    a {
+      &:hover {
+        color: $hover-color;
+      }
+    }
+  }
+}

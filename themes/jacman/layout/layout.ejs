@@ -1,0 +1,17 @@
+<%- partial('_partial/head') %>
+<%- partial('_partial/_head-sections/IE',null,{cache: !config.relative_link}) %>
+<body>
+    <%- partial('_partial/header') %>
+    <%- partial('_partial/notice') %>
+   
+
+    <section class="content-wrap">
+
+            <%- body %>
+       
+        
+    </section>
+    <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+    <%- partial('_partial/copyright',null, {cache: !config.relative_link}) %>
+</body>
+</html>

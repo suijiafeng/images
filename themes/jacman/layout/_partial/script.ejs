@@ -1,0 +1,26 @@
+
+
+
+<%- js('lib/jquery-3.2.1/jquery-3.2.1.min.js') %>
+<%- js('lib/owlcarousel/owl.carousel.min.js') %>
+
+<%if (theme.jsonContent.searchLocal){%>
+	<%- js('js/search.js?rev=@@hash') %>
+<%}%>
+<%- js('js/app.js?rev=@@hash') %>
+
+<script>
+	$(document).ready(function(){
+  $('.owl-carousel').owlCarousel(
+	  {
+		items:1,
+		margin:15,
+		responsiveClass:true,
+		loop:true,
+		autoplay:true,
+		autoplayTimeout:4500,
+		autoplayHoverPause:true
+	  }
+  );
+});
+</script>

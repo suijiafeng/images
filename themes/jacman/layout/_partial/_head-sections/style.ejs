@@ -1,0 +1,19 @@
+
+<link rel="stylesheet" href="/lib/bootstrap-3.3.7/css/bootstrap.min.css">
+
+<%   
+    var _bootstrap = '//cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css?rev=3.3.4';
+    var _fontAwe =  theme.fontAwesome || '/css/thirdParty/font-awesome.min.css?rev=4.7.0';
+    var _gitmentStyle = '//imsun.github.io/gitment/style/default.css';
+    var style = '/css/style.css?rev=@@hash';
+%>
+<link rel="stylesheet" href="/lib/owlcarousel/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="/lib/owlcarousel/assets/owl.theme.default.min.css">
+<% if(theme.gitment.enable && is_post()){ %>
+    <%- css([_gitmentStyle]) %>
+<% } %>
+
+<%- css([_bootstrap, _fontAwe, style]) %>
+
+
+<link rel="stylesheet" href="/css/default.css">

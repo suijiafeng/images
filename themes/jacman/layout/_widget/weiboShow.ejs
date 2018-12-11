@@ -1,0 +1,17 @@
+<% if(theme.weibo){%>
+<div class="weiboShow_title weiboShow_title_top">
+    <!-- logo -->
+    <div class="weiboShow_title_logo" id="weibo_title">
+            <% theme.weibo.forEach(function (item) {%>
+        <a href="<%- item.href%>" target="_blank" title="<%- item.name%>" >
+            <em class="WB_logo16a" title="微博"><%- item.icon%></em>
+            <span><%= __('weibo') %></span>
+        </a>
+        <%})%>
+    </div>
+    <!-- /logo -->
+</div>
+
+<%}%>
+
+

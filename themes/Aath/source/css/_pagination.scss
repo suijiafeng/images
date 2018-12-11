@@ -1,0 +1,53 @@
+
+
+
+.pagination {
+    margin: 30px auto;
+    text-align: center;
+    display: block;
+  }
+  
+  .pagination a {
+    background: $white_color;
+    color:$defaul_color;
+    text-align: center;
+    display: inline-block;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+  }
+  
+  .pagination a:hover {
+    background: #6e7173;
+    color: $white_color;
+    text-decoration: none;
+  }
+  
+  .pagination a i {
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+  }
+  
+  .pagination .prev {
+    margin: 0 5px;
+  }
+  
+  .pagination .next {
+    margin: 0 5px;
+  }
+  
+  .pagination .page-number {
+    @include button-extend;
+   @include border-radius;
+  }
+  
+  .pagination .current {
+    background: #6e7173;
+    color: $white_color;
+  }
+ .extend{
+   @include button-extend
+  }
+
+

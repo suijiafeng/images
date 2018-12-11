@@ -1,0 +1,93 @@
+$hover-color: #007fff;
+$theme_color: red;
+$white_color:#ffffffb8;
+$defaul_color:#a3a3a3;
+$transition: .3s color;
+$box-shadow: 0 2px 5px -2px rgba(0,0,0,.05);
+$breakpoint-desktop: 1032px;
+$breakpoint-phone: 700px;
+
+@mixin button-extend {
+  display: inline-block;
+    padding: 0 14px;
+    line-height: 36px;
+    margin: 0 3px;
+
+} 
+@mixin border-radius {
+    border-radius: 2px;
+}
+
+@mixin basic {
+  max-width: 1000px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+@mixin table-view {
+  width: 100%;
+}
+
+@mixin aside {
+  margin-left: 15px;
+  box-sizing: border-box;
+  background-color: $white_color;
+  position: sticky;
+  top: 15px;
+  align-self: flex-start;
+}
+
+@mixin left-container {
+  width: 66%;
+  background-color: $white_color;
+  border-radius: 2px;
+  box-shadow: $box-shadow;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #f4f5f5;
+}
+
+body {
+
+  font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  // background-color: #f4f5f5;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #909090;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  @include basic;
+}
+
+.website_bg{
+  position: fixed;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  background:  url(../images/website_bg.png);
+}
+@import 'css/_partical/categories';
+@import 'css/_partical/footer';
+@import 'css/_partical/header';
+@import 'css/_partical/tag';
+
+@import 'css/_archive';
+@import 'css/_about';
+@import 'css/_post';
+@import 'css/_index';
+@import 'css/_tags';
+@import 'css/_pagination';
+@import 'css/_default';

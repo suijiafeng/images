@@ -1,0 +1,12 @@
+<% if(config.links) { %>
+  <div class="links">
+    <h1>
+      <%= __('blogroll') %>
+    </h1>
+    <div class="content">
+      <% for(let i in config.links) { %>
+        <a href="<%- config.links[i] %>" target="_blank"><%- i %></a>
+      <% } %>
+    </div>
+  </div>
+<% } %>

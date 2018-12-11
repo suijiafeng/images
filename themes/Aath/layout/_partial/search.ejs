@@ -1,0 +1,11 @@
+
+<% if(config.search) { %>
+    <div class="search">
+      <div class="content">
+        <form action="https://bing.com/search" target="_blank" class="search-form">
+          <input type="text" name="q" maxlength="20" placeholder=<%= __('search') %>>
+          <input type="hidden" name='site' value="<%- config.url %>">
+        </form>
+      </div>
+    </div>
+    <% } %> 

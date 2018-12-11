@@ -1,0 +1,12 @@
+<%   
+    var _bootstrap = '//apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js';
+%>
+
+<% if(theme.gitment.enable && is_post()){ %>
+    <%- css([_gitmentStyle]) %>
+<% } %>
+
+<%- css([_bootstrap, _fontAwe, style]) %>
+
+
+

@@ -1,0 +1,17 @@
+.carousel{
+    position: relative;
+}
+.owl-dots{
+    position: absolute;
+    bottom: 0;
+    right:5%;
+}
+.owl-theme .owl-dots .owl-dot.active span, 
+.owl-theme .owl-dots .owl-dot:hover span{
+    background: #e67e22;
+}
+
+
+.widget .social a{
+    border-radius: 50%;
+}

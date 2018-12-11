@@ -37,6 +37,7 @@ color: #909090;
 
 @media (max-width: $breakpoint-phone) {
   header {
+    .header-container {width: 95%}
     .right-header {
       li.nav-item {
         padding: 0 0 0 5px;

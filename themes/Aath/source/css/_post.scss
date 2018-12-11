@@ -1,5 +1,5 @@
 #post {
-  width: 1000px;
+  width: 1200px;
   .content {
     article {
       @include left-container;
@@ -99,7 +99,7 @@
 
 @media (min-width: $breakpoint-desktop) {
   #post {
-    width: 1000px;
+    width: 1200px;
   }
 }
 

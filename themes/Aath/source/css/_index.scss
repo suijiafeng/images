@@ -4,7 +4,7 @@
   }
   .posts-list {
     @include left-container;
-    flex-basis: 66%;
+    flex-basis: 69%;
     align-self: flex-start;
     section {
       padding: 20px 25px 0;
@@ -74,7 +74,7 @@
   aside {
     position: sticky;
     top: 15px;
-    flex-basis: 34%;
+    flex-basis: 30%;
     > div {
       margin-left: 15px;
       box-sizing: border-box;
@@ -181,14 +181,17 @@
 
 @media (min-width: $breakpoint-desktop) {
   #index {
-    width: 1000px;
+    width: 1200px;
   }
   .paging {
-    width: 1000px;
+    width: 1200px;
   }
 }
 
 @media (max-width: $breakpoint-desktop) {
+  #index {
+    width: 95%;
+  }
   .paging {
     width: 100%;
     box-sizing: border-box;

@@ -4,7 +4,7 @@ $white_color:#ffffffb8;
 $defaul_color:#a3a3a3;
 $transition: .3s color;
 $box-shadow: 0 2px 5px -2px rgba(0,0,0,.05);
-$breakpoint-desktop: 1032px;
+$breakpoint-desktop: 1232px;
 $breakpoint-phone: 700px;
 
 @mixin button-extend {
@@ -19,7 +19,7 @@ $breakpoint-phone: 700px;
 }
 
 @mixin basic {
-  max-width: 1000px;
+  max-width: 1200px;
   padding: 0 16px;
   margin: 0 auto;
 }
@@ -38,7 +38,7 @@ $breakpoint-phone: 700px;
 }
 
 @mixin left-container {
-  width: 66%;
+  width: 74%;
   background-color: $white_color;
   border-radius: 2px;
   box-shadow: $box-shadow;
@@ -69,6 +69,7 @@ a {
 main {
   flex-grow: 1;
   display: flex;
+  justify-content: space-between;
   @include basic;
 }
 

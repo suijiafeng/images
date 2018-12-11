@@ -1,5 +1,5 @@
 #archive {
-  width: 1000px;
+  width: 1200px;
   .content {
     @include left-container;
     align-self: flex-start;
@@ -38,7 +38,7 @@
 
 @media (min-width: $breakpoint-desktop) {
   #archive {
-    width: 1000px;
+    width: 1200px;
   }
 }
 

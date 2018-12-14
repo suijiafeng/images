@@ -114,11 +114,11 @@
   #post {
     flex-direction: column;
     > .content {
-      // order: 1;
+      order: 0;
       width: 100%;
     }
     aside {
-      order: 0;
+      order: 1;
       .toc-container {
         display: none;
         margin-left: 0;

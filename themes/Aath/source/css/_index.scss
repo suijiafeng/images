@@ -199,6 +199,7 @@
 }
 
 @media (max-width: $breakpoint-phone) {
+  
   #index {
     flex-direction: column;
     .posts-list {
@@ -209,6 +210,7 @@
       display: none;
     }
     aside {
+      display: none;
       position: static;
       order: 1;
       > div {

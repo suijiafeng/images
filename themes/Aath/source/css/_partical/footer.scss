@@ -1,9 +1,11 @@
 footer {
+  padding:15px 0;
   .copyright {
     @include basic;
     font-size: 14px;
     display: flex;
-    line-height: 3em;
+    line-height: 1.5;
+    text-align: center;
     color: #BABABA;
     a {
       &:hover {
